@@ -1,24 +1,49 @@
 # poo-fundamentals
-repositório para trabalhar os fundamentos básicos de poo
+Repositório para trabalhar os fundamentos básicos de POO (Programação Orientada a Objetos).
 
-POO - Programação Orientada a Objetos
+## Tecnologias Utilizadas
+- **Java**: Linguagem de programação utilizada no projeto.
+- **Maven**: Ferramenta de automação de compilação e gerenciamento de dependências.
 
-#Construtor
-- é uma operação especial da classe, que executa no momento da instanciação do objeto;
-- se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão;
-- é possível especificar mais de um construtor na mesma classe (sobrecarga);
+## Estrutura do Projeto
+O projeto está organizado em pacotes e classes que demonstram conceitos fundamentais de POO, como encapsulamento, herança, polimorfismo e sobrecarga de métodos.
 
-#Sobrecarga
-- é um recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parâmetros
+### Pacotes e Classes
 
-#Encapsulamento
-- é um princípio que consiste em proteger os dados de um objeto e permitir que eles sejam acessados ou modificados apenas de maneiras controladas. .
-Exemplo: uma conta bancária que protege o saldo, não permitindo definir um valor negativo diretamente, sendo necessário passar pelo método depositar() ou sacar() para assim modificar o saldo.
+#### `org.fundamentals`
+- **SistemaRh**: Classe principal que demonstra o uso de encapsulamento e herança com as classes `Funcionario` e `Gerente`.
+- **SistemaFinanceiro**: Classe principal que demonstra o cálculo de lucro mensal através da classe `RelatorioFinanceiro`.
+- **RelatorioFinanceiro**: Classe que contém o método `calcularLucroMensal` para calcular o lucro mensal.
 
-private: o membro pode ser acessado apenas dentro da classe
-public: pode ser acessado por qualquer classe
-protected: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes
-default: o membro pode ser acessado por classes do mesmo pacote
+#### `org.fundamentals.entities`
+- **Funcionario**: Classe que representa um funcionário com um salário. Utiliza encapsulamento para proteger o atributo `salario`.
+- **Gerente**: Classe que herda de `Funcionario` e adiciona funcionalidades específicas para um gerente, como a avaliação de equipe.
 
-#Herança e Polimorfismo
-Seção 13: aula 128
+## Conceitos de POO Demonstrados
+
+### Construtor
+- Operação especial da classe que executa no momento da instanciação do objeto.
+- Se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão.
+- É possível especificar mais de um construtor na mesma classe (sobrecarga).
+
+### Sobrecarga
+- Recurso que uma classe possui de oferecer mais de uma operação com o mesmo nome, porém com diferentes listas de parâmetros.
+
+### Encapsulamento
+- Princípio que consiste em proteger os dados de um objeto e permitir que eles sejam acessados ou modificados apenas de maneiras controladas.
+- Exemplo: uma conta bancária que protege o saldo, não permitindo definir um valor negativo diretamente, sendo necessário passar pelo método `depositar()` ou `sacar()` para assim modificar o saldo.
+
+#### Modificadores de Acesso
+- **private**: O membro pode ser acessado apenas dentro da classe.
+- **public**: Pode ser acessado por qualquer classe.
+- **protected**: O membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes.
+- **default**: O membro pode ser acessado por classes do mesmo pacote.
+
+### Herança e Polimorfismo
+- Demonstrado através das classes `Funcionario` e `Gerente`, onde `Gerente` herda de `Funcionario` e adiciona funcionalidades específicas.
+
+## Executando o Projeto
+Para executar o projeto, utilize uma IDE como IntelliJ IDEA e execute as classes principais `SistemaRh` e `SistemaFinanceiro`.
+
+## Autor
+- renansistemas
