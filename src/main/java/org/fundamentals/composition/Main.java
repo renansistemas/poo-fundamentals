@@ -5,6 +5,8 @@ public class Main {
 
         CarroComposicao carroComposicao = new CarroComposicao("Chevrolet", "Ônix", "Gasolina", 2000);
         carroComposicao.ligar();
+        carroComposicao.desligar();
+        carroComposicao.destruir();
 
     }
 }

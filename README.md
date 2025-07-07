@@ -33,6 +33,17 @@ O projeto está organizado em pacotes e classes que demonstram conceitos fundame
 - Princípio que consiste em proteger os dados de um objeto e permitir que eles sejam acessados ou modificados apenas de maneiras controladas.
 - Exemplo: uma conta bancária que protege o saldo, não permitindo definir um valor negativo diretamente, sendo necessário passar pelo método `depositar()` ou `sacar()` para assim modificar o saldo.
 
+### Herança
+- Recurso que permite que uma classe herde propriedades e comportamentos de outra classe.
+
+### Composição
+- Relação entre objetos, onde um objeto é o dono de outro objeto.
+- Exemplo: um carro tem um motor, logo o carro é o dono do motor.
+
+### Agregação
+- Relação entre objetos, onde um objeto tem um ou mais objetos associados, mas não é o dono.
+- Exemplo: um motorista tem um carro, mas o motorista não é o dono do carro.
+
 #### Modificadores de Acesso
 - **private**: O membro pode ser acessado apenas dentro da classe.
 - **public**: Pode ser acessado por qualquer classe.
